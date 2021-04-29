@@ -1,5 +1,5 @@
 {% set name = "ibis-bigquery" %}
-{% set version = "0.1.0" %}
+{% set version = "0.1.1" %}
 
 
 package:
@@ -8,10 +8,10 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/ibis-bigquery-{{ version }}.tar.gz
-  sha256: 0aa1413c5315202419e7d79e1b0c03c39fde9df693f810402d57eb3e418cba80
+  sha256: 175be55e2672f7d9da7c682aee0b97ab5a4da15c029f8ca14caafc81824d8f69
 
 build:
-  number: 1
+  number: 0
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
 
@@ -23,7 +23,7 @@ requirements:
     - google-cloud-bigquery >=1.12.0,<3.0.0dev
     - google-cloud-bigquery-storage >=1.0.0,<3.0.0dev
     - ibis-framework >=1.2.0,<3.0.0dev
-    - pyarrow >=1.0.0,<4.0.0dev
+    - pyarrow >=1.0.0,<5.0.0dev
     - pydata-google-auth
     - python >=3.7
     - sqlalchemy <1.4.0dev
