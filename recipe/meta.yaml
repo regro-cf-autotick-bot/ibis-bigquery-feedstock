@@ -26,6 +26,9 @@ requirements:
     - pyarrow >=1.0.0,<7.0.0dev
     - pydata-google-auth
     - python >=3.7
+    # Fixes for transitive deps from Ibis
+    - regex<2022.0.0,>=2021.7.6
+    - atpublic<3,>=2.3
 
 test:
   imports:
