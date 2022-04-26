@@ -1,5 +1,5 @@
 {% set name = "ibis-bigquery" %}
-{% set version = "2.1.1" %}
+{% set version = "2.1.2" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/ibis-bigquery-{{ version }}.tar.gz
-  sha256: c330864d55cfe22e86b0517aa0620d92be4ccfb0decffb1dff2488ac140db38f
+  sha256: 647d8594e3f1d3ad3c886d1afa5a6d32a322aa117aeed1dcc98c9a26b5bf330c
 
 build:
   number: 0
